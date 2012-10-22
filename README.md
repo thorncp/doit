@@ -25,7 +25,8 @@ List tasks with no args `doit`
 Remove tasks by index `doit rm`
 
     $ doit rm 0
-    Removed take out trash
+    Removed: take out trash
+
     $ doit
     0: laundry
 
