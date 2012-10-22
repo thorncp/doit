@@ -1,24 +1,33 @@
 # Doit
 
-TODO: Write a gem description
+An extremely simple CLI todo list
 
 ## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'doit'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
 
     $ gem install doit
 
 ## Usage
 
-TODO: Write usage instructions here
+Add tasks with `doit add`
+
+    $ doit add take out trash
+    Added: take out trash
+
+    $ doit add laundry
+    Added laundry
+
+List tasks with no args `doit`
+
+    $ doit
+    0: take out trash
+    1: laundry
+
+Remove tasks by index `doit rm`
+
+    $ doit rm 0
+    Removed take out trash
+    $ doit
+    0: laundry
 
 ## Contributing
 
