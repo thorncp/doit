@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+
+require "doit"
+require "doit/cli"
+require "doit/yaml_store"
+
+path = File.expand_path("~/.doit.yml")
+store = Doit::YAMLStore.new(path)
+Doit::CLI.new(store, ARGV).execute
